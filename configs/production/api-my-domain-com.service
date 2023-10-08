@@ -1,0 +1,10 @@
+[Unit]
+Description=api-my-domain-com
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/api-my-domain-com/configs/
+ExecStart=/usr/local/bin/api-my-domain-com -config=/opt/api-my-domain-com/configs/production/config.api.yaml -log=/var/log/api.my-domain.com/api.log
+
+[Install]
+WantedBy=multy-user.target
