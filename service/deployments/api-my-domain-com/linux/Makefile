@@ -28,7 +28,7 @@ SERVICE_PATH=/etc/systemd/system
 .PHONY: help build
 
 help: Makefile
-	@echo "Выберите опцию сборки "$(BINARY_NAME)":"
+	@echo "Select the build option "$(BINARY_NAME)":"
 	@sed -n 's/^##//p' $< | column -s ':' |  sed -e 's/^/ /'
 
 ## build-app: Build App
